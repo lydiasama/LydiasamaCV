@@ -8,7 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="FontProfile">
+    <style name="AppTheme.TextAppearance">
+        <item name="android:fontFamily">@font/font_lydiasama</item>
+    </style>
+
+    <style name="FontProfile" parent="AppTheme.TextAppearance">
+        <item name="fontFamily">@font/lydia1_thick</item>
         <item name="android:textSize">@dimen/font_header</item>
         <item name="android:textColor">@color/white</item>
         <item name="android:singleLine">true</item>
