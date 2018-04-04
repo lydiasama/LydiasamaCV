@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- FONT -->
+    <dimen name="font_header">20sp</dimen>
+    <dimen name="font_default">16sp</dimen>
+
+    <!-- MARGIN AND PADDING -->
+    <dimen name="margin_icon_big_profile">70dp</dimen>
+    <dimen name="margin_icon">8dp</dimen>
+    <dimen name="margin_default">16dp</dimen>
+
+</resources>
