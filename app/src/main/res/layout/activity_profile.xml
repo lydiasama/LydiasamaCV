@@ -4,6 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
     tools:context="com.hallelujah.cv.activity.ProfileActivity">
+
+    <com.github.siyamed.shapeimageview.CircularImageView
+        android:id="@+id/ivProfile"
+        android:transitionName="avatar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_profile"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:siBorderAlpha="0.5"
+        app:siBorderColor="@color/white"
+        app:siBorderWidth="8dp" />
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/FontProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:layout_marginEnd="@dimen/margin_icon"
+        android:text="@string/name"
+        android:transitionName="name"
+        app:layout_constraintBottom_toBottomOf="@+id/ivProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivProfile"
+        app:layout_constraintTop_toTopOf="@+id/ivProfile"
+        app:layout_constraintVertical_bias="0.40" />
+
+    <TextView
+        android:id="@+id/tvNickname"
+        style="@style/FontProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="200dp"
+        android:layout_marginTop="@dimen/margin_icon"
+        android:text="@string/nickname"
+        android:transitionName="nickname"
+        app:layout_constraintStart_toStartOf="@+id/tvName"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
 </android.support.constraint.ConstraintLayout>
