@@ -16,14 +16,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setOnClickProfileAvatar() {
-        ivProfile.setOnClickListener {
+        ivAvatar.setOnClickListener {
             gotoProfileActivity()
         }
     }
 
     private fun gotoProfileActivity() {
         val intent = Intent(this, ProfileActivity::class.java)
-        val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, ivProfile, "avatar")
+        val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, ivAvatar, "avatar")
         startActivity(intent, options.toBundle())
     }
 }
