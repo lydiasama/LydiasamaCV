@@ -60,8 +60,8 @@
         android:layout_alignParentBottom="true"
         android:background="?android:attr/windowBackground"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:itemTextColor="@color/colorMenu"
-        app:itemIconTint="@color/colorMenu"
+        app:itemTextColor="@color/menu_color_state"
+        app:itemIconTint="@color/menu_color_state"
         app:menu="@menu/menu_nevigation_bar"/>
 
 
