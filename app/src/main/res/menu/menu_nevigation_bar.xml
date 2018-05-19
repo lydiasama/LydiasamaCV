@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/item_personal_info"
+        android:icon="@drawable/ic_action_user"
+        android:title="@string/menu_profile"/>
+    <item
+        android:id="@+id/item_education"
+        android:icon="@drawable/ic_education"
+        android:title="@string/menu_education"/>
+    <item
+        android:id="@+id/item_skill"
+        android:icon="@drawable/ic_action_book"
+        android:title="@string/menu_skill"/>
+    <item
+        android:id="@+id/item_work_experience"
+        android:icon="@drawable/ic_work"
+        android:title="@string/menu_work"/>
+</menu>
