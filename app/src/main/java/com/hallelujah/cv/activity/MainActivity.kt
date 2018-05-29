@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun gotoProfileActivity() {
-        val intent = Intent(this, ProfileActivity::class.java)
+        val intent = Intent(this, PagerActivity::class.java)
         val options = ActivityOptionsCompat.makeSceneTransitionAnimation(this, ivAvatar, "avatar")
         startActivity(intent, options.toBundle())
     }

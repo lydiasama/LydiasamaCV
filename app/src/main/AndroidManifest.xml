@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.ProfileActivity"
+            android:name=".activity.PagerActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
