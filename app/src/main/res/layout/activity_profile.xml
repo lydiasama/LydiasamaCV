@@ -51,18 +51,18 @@
         android:layout_marginEnd="@dimen/margin_default"
         app:layout_constraintStart_toStartOf="@+id/tvName"
         app:layout_constraintTop_toBottomOf="@+id/tvName"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@drawable/bg_round_corner"
+        android:background="@drawable/bg_top_corner"
         app:layout_constraintTop_toBottomOf="@+id/ivAvatar"
         app:layout_constraintBottom_toTopOf="@id/bottom_nav_view"
-        android:layout_marginStart="12dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginTop="12dp"/>
+        android:layout_marginStart="@dimen/margin_icon"
+        android:layout_marginEnd="@dimen/margin_icon"
+        android:layout_marginTop="12dp" />
 
     <com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx
         android:id="@+id/bottom_nav_view"
