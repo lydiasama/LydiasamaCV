@@ -31,5 +31,6 @@ class PagerActivity : AppCompatActivity() {
     private fun setupPager() {
         val adapter = PageAdapter(supportFragmentManager)
         pager.adapter = adapter
+        pager.offscreenPageLimit =  bottom_nav_view.itemCount
     }
 }
