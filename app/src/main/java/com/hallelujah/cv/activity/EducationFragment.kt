@@ -11,6 +11,12 @@ import com.hallelujah.cv.R
 
 class EducationFragment : Fragment() {
 
+    companion object {
+        fun newInstance(): Fragment {
+            return EducationFragment()
+        }
+    }
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.fragment_education, container, false)
