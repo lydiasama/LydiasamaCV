@@ -1,13 +1,17 @@
 package com.hallelujah.cv.activity
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.gson.Gson
 import com.hallelujah.cv.R
+import com.hallelujah.cv.core.CoreUtil
+import com.hallelujah.cv.model.ProfileModel
 import java.io.InputStream
 
 class ProfileFragment : Fragment() {
@@ -29,13 +33,8 @@ class ProfileFragment : Fragment() {
     }
 
     private fun loadProfileData() {
-        try {
-            val inputStream: InputStream = context.assets.open("data/profile.json")
-            val inputString = inputStream.bufferedReader().use{it.readText()}
-            Log.d("FILE",inputString)
-        } catch (e:Exception){
-            Log.d("FILE", e.toString())
-        }
+        val profileData = CoreUtil().loadJsonData(context, "profile", ProfileModel::class.java)
+        Log.d("PROFILE", profileData?.name)
     }
 
 }
