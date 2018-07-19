@@ -8,11 +8,9 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.google.gson.Gson
 import com.hallelujah.cv.R
 import com.hallelujah.cv.core.CoreUtil
 import com.hallelujah.cv.model.ProfileModel
-import java.io.InputStream
 
 class ProfileFragment : Fragment() {
 
